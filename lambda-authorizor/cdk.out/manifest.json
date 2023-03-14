@@ -1,0 +1,172 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "AppsyncLambdaAuthorizorStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "AppsyncLambdaAuthorizorStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "AppsyncLambdaAuthorizorStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AppsyncLambdaAuthorizorStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e0de99935500bef394ff851b869f0918819c710a23f2e4ee32d7f26bac736e63.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "AppsyncLambdaAuthorizorStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "AppsyncLambdaAuthorizorStack.assets"
+      ],
+      "metadata": {
+        "/AppsyncLambdaAuthorizorStack/AppsyncLambdaAuthorizor/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppsyncLambdaAuthorizorServiceRoleDDAF11FA"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/AppsyncLambdaAuthorizor/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppsyncLambdaAuthorizor85A75C13"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/AppsyncLambdaAuthorizor/appsync": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppsyncLambdaAuthorizorappsyncB0C3C2A8"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiC8550315"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/Schema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiSchema0EA92056"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceServiceRole0AF6D7BD"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceServiceRoleDefaultPolicyB4A8469E"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasource56031DFE"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/QuerygetTodosResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceQuerygetTodosResolverBD178C2D"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/QuerygetTodoByIdResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceQuerygetTodoByIdResolver5EED1FDF"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/MutationaddTodoResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceMutationaddTodoResolver08E72EC5"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/MutationupdateTodoResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceMutationupdateTodoResolverDB478099"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/api/lambdaDatasource/MutationdeleteTodoResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apilambdaDatasourceMutationdeleteTodoResolver68685364"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/AppsyncTodoHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppsyncTodoHandlerServiceRoleF32CB4D0"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/AppsyncTodoHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppsyncTodoHandlerServiceRoleDefaultPolicy52B1EBC6"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/AppsyncTodoHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppsyncTodoHandler9E3CDF55"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/TodosTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TodosTable250330D8"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/AppsyncLambdaAuthorizorStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "AppsyncLambdaAuthorizorStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
